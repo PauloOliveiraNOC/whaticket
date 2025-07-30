@@ -1,0 +1,173 @@
+✅ MÉTODO DE INSTALAÇÃO CLIQUE TUBO - FLOWBUILDER
+
+​​​​​​​​​​​​🔴 NECESSÁRIO SERVIDOR UBUNTU 22.04 4VCPU 8GB
+CRIAR 2 SUBDOMÍNIOS TIPO A APONTANDO PARA O IP DO SERVIDOR
+
+⚠️ CONFIRA SE OS SUBDOMÍNIOS ESTÃO PROPAGADOS
+
+💠BAIXAR BITVISE
+https://dl.bitvise.com/BvSshClient-Inst.exe
+
+🔃 SERVIDORES
+
+👇🏻 CONTABO
+https://contabo.com/en/vps/
+
+*******************************************************************
+
+
+Comandos a serem inseridos no terminal do BITVISE.
+
+sudo apt-get update && sudo apt-get upgrade -y && reboot
+
+
+adduser deploy
+
+Insira a senha
+12243648 
+
+Repita a senha
+12243648
+
+adduser deploy sudo
+
+APERTAR O ENTER
+
+APERTAR O ENTER
+
+APERTAR O ENTER
+
+APERTAR O ENTER
+
+APERTAR O ENTER
+
+Y
+
+cd /home
+
+apt install git && git clone https://github.com/USERGITHUB/PASTA.git
+
+User do Github: USER GIT
+
+Token do Github: 
+
+cd /home/PASTA
+
+chmod +x instalar_primaria instalar_nova_instancia && ./instalar_primaria
+
+0
+
+DIGITE a senha DEPLOY
+12243648
+
+empresa01
+
+999
+
+999
+
+DIGITE O SITE PARA O FRONTEND
+https://QUALQUER-NOME.SEUDOMINIO.com.br
+
+DIGITE O SITE PARA O BACKEND
+https://QUALQUER-NOME.SEUDOMINIO.com.br
+
+3001
+
+4001
+
+5001
+
+--------------------------------------------------------------
+
+INSTALAÇÃO FINALIZADA APÓS GERAÇÃO DOS CERTIFICADO SSL
+--------------------------------------------------------------------------
+
+COMANDO PARA BUILDAR O BACKEND
+
+cd /home/deploy/empresa01/backend
+sudo su deploy 
+pm2 stop all && npm run build && pm2 restart all && sudo reboot now
+
+suasenhadodeploy
+--------------------------------------------------------------------
+
+COMANDO PARA BUILDAR O FRONTEND
+
+cd /home/deploy/empresa01/frontend && rm -rf node_modules/ && rm -rf build/ && npm install --force && npm run build
+
+
+
+###############################################################################################
+
+
+VARIÁVEIS QUE PODEM SER USADAS DENTRO DO PAINEL
+
+{{ms}} - Bom dia, boa tarde, boa noite ou boa madrugada dependendo da hora do dia
+
+{{name}} - Nome cadastrado no WhatsApp de quem entrou em contato
+
+{{firstName}} - Primeiro nome
+
+{{userName}} - Atendente
+
+{{date}} - Data
+
+{ticket_id}} Número do chamado
+
+{{{queue}} - Setor
+
+{{connection}} - Conexão
+
+{{protocol}} - Geração de protocolo
+
+{{hora}} - Hora atual no formato de hora-min-seg
+
+-----------------------------------------------------
+
+PERSONALIZAÇÃO INTERNA
+----------------------
+frontend\src\pages\Login/index
+
+TROCAR CAPA DO SISTEMA
+
+Linha: 24 (link do arquivo)
+
+TROCAR WHATSAPP TELA INICIAL
+
+Linha:230
+
+------------------------------------------------------
+
+frontend\src\pages\Signup/index
+
+TROCAR CAPA DO SISTEMA
+
+Linha: Linha: 54 (link do arquivo)
+
+-----------------------------------------------------------
+
+CORES BOTÕES TELA INICIAL( CASO PRECISE)
+
+frontend\src\pages\Login/index
+
+linhas: 54 - 63 - 64 - 68 - 78 - 79 - 86 - 93 - 99 - 101
+
+frontend/src/pages/signup/index
+
+84 - 93 - 94 - 103 - 113 - 115 - 116 
+
+frontend/src/pages/ForgetPassWord/index
+
+linhas: 44 - 81 - 104 
+
+frontend/src/pages/ResetPassword/index 
+
+linhas: 44 - 81 - 105
+
+----------------------------------------------------------
+----------------------------------------------------------
+ATT: https://cliqueturbo.com.br
+
+
+
